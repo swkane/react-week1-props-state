@@ -3,6 +3,7 @@ import logo from '../logo.svg';
 import '../styles/App.css';
 import NavBar from './NavBar';
 import PlayListForm from './PlayListForm';
+import PlayList from './PlayList';
 import {Container, Row, Col} from 'reactstrap';
 
 class App extends Component {
@@ -11,13 +12,20 @@ class App extends Component {
       <div className="App">
         <Container>
           <NavBar />
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Play What!?</h2>
-          </div>
           <Row>
-            <Col className="column" xs='6'>
+            <Col>
+              <div className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h2>Play What!?</h2>
+              </div>
+            </Col>
+          </Row>
+          <Row className="main">
+            <Col className="column" xs='5'>
               <PlayListForm />
+            </Col>
+            <Col className="column" xs='6'>
+              <PlayList />
             </Col>
           </Row>
         </Container>

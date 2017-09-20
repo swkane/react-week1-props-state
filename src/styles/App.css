@@ -2,6 +2,22 @@
   margin: 0 auto;
 }
 
+.btn-update {
+  margin: 10px;
+}
+
+.playlist-item {
+  background-color: #166088;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  color: #B7C3F3;
+}
+
 .App {
   text-align: center;
 }

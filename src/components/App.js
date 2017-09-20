@@ -24,7 +24,7 @@ class App extends Component {
             <Col className="column" xs='5'>
               <PlayListForm />
             </Col>
-            <Col className="column" xs='6'>
+            <Col className="column" xs='5'>
               <PlayList />
             </Col>
           </Row>
